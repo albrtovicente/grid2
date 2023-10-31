@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 1em;
+}
+header{
+    text-align: center;
+}
+.logo:hover{
+    transform: scale(1.10);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 12px;
+}
+.img-usuario{
+    text-align: center;
+    padding: 1em;
+}
+.info-usuario{
+    background-color: rgb(165, 236, 241);
+    justify-items: center;
+    text-align: center;
+}
+.generador-qr{
+   background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 12px;
+    justify-items: center;
+}
+.qr-retrasado{
+    margin: 3em 0 1em 0;
+}
+.qr{
+    margin: 3em;
+}
+.btn{
+
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+
+
+}
+.btn:hover,
+.btn:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.btn:active {
+  background: var(--color);
+  color: #fff;
+}
+.boton{
+    
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
